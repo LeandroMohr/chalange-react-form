@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Jumbotron, Button } from 'react-bootstrap';
 
 import Routes from './Routes';
-import Menu from './Menu';
+import Menu from '../components/Menu';
 
 class App extends Component {
   render() {
@@ -13,10 +12,7 @@ class App extends Component {
           <Menu />
         </header>
         <main-cotent>
-          <Jumbotron>
-            <Routes />
-          </Jumbotron>
-          <Button bsStyle="primary">Aprenda mais!</Button>
+          <Routes />
         </main-cotent>
       </Router>
     );
