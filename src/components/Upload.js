@@ -32,23 +32,10 @@ class Thumb extends React.Component {
             this.setState({ loading: false, thumb: reader.result });
         };
 
-        console.log(reader.result)
-
         reader.onerror = function (error) {
             console.log('Error: ', error);
         };
     }
-
-    // toBase64 = (file) => {
-    //     let reader = new FileReader();
-    //     let picture = ''
-
-    //     reader.readAsDataURL(file);
-    //     reader.onload = () => {
-    //         picture = reader.result
-    //         this.setState({ picture });
-    //     };
-    // }
 
     render() {
         const { file } = this.props;
@@ -57,15 +44,6 @@ class Thumb extends React.Component {
         if (!file) { return null; }
 
         if (loading) { return <p>loading...</p>; }
-
-        console.log(thumb)
-
-        let idCardBase64 = '';
-        this.getBase64(file, (result) => {
-            idCardBase64 = result;
-        });
-
-        console.log(idCardBase64)
 
         return (<img src={thumb}
             alt={file.name}
