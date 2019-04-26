@@ -1,0 +1,74 @@
+.success .content {
+    width: 70vw;
+    position: absolute;
+    top: 20vh;
+}
+
+.success h1 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    letter-spacing: -0.05em;
+    margin-bottom: 20px;
+    padding: .1em 0;
+    color: #444;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.success h1:before,
+.success h1:after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 3px;
+    vertical-align: middle;
+    background: #f0f0f0;
+}
+.success h1:before {
+    left: -.5em;
+    margin-left: -50%;
+}
+.success h1:after {    
+    left: .5em;
+    margin-right: -50%;
+}
+.success h1 > span {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+}
+
+.success p {
+    display: block;
+    font-size: 1.35em;
+    line-height: 1.5em;
+    margin-bottom: 22px;
+}
+
+.success .notify {
+display: block;
+background: #fff;
+padding: 12px 18px;
+max-width: 50%;
+margin: 0 auto;
+text-align: center;
+border-radius: 3px;
+margin-bottom: 20px;
+box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px;
+}
+
+.success .notify h1 { margin-bottom: 6px; }
+
+.success .successbox h1 { color: #678361; }
+
+.success .notify .messageicon { 
+display: block;
+text-align: center;
+margin-bottom: 10px;
+}
+
+.success .notify .messageicon img{
+    width: 10em;
+} 
