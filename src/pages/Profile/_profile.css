@@ -1,0 +1,8 @@
+.edit-profile .cover-container {
+    max-width: 50em;
+    text-align: center;
+  }
+  .edit-profile .cover .btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: 700;
+  }
